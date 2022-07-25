@@ -51,10 +51,45 @@ const ageClass = [31, 28, 30, 35];
     //if (ageClass[i] % 2 == 0) {console.log(ageClass[i])};
 
 
-//EXERCISE 8 
- 
-function exeight([i]) {
-    console.log ("exeight")
-    return lowest;
+//EXERCISE 8
+
+/* function exeight() {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < array[0])
+        {
+             array[0] = array[i];
+        }
+    } console.log (array[0]);       
 }
-exeight [20,19,200,1,15,]
+    
+let array = [7, 2, 8, 1, 3, 0.8,9];
+exeight(array) */
+
+//EXERCISE 9
+
+/* function exnine() {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > array[0])
+        {
+             array[0] = array[i];
+        }
+    } console.log (array[0]);       
+}
+    
+let array = [7, 2, 17, 1, 3, 0.8,9];
+exnine(array) */
+
+//EXERCISE 10
+
+function exten(array, index) {
+    for (let i = 0; i < array.length; i++){
+        if (i === index) { console.log(array[i]); }
+   } 
+}
+
+var array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+var index = 4;
+exten(array,index)
+
+// EXERCISE 11
+
