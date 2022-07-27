@@ -31,7 +31,7 @@ if(nanoAge>=21) {
 
 //EXERCISE 6 Sorting an Array
 
-let classNames = ["Alberto", "Emely", "Jan", "Phillip", "Raul"];
+let classNames = ["Alberto", "Emily", "Jan", "Phillip", "Raul"];
 //console.log(classNames[0])
 //console.log(classNames[4])
 //for (let i = 0; i<classNames.length; i++) { console.log(classNames[i]) };
@@ -53,7 +53,7 @@ const ageClass = [31, 28, 30, 35];
 // Functions that use Arrays:
 //EXERCISE 8 Lowest number
 
-/* function exeight() {
+/* function exEight() {
     for (let i = 0; i < array.length; i++) {
         if (array[i] < array[0])
         {
@@ -63,11 +63,11 @@ const ageClass = [31, 28, 30, 35];
 }
     
 let array = [7, 2, 8, 1, 3, 0.8,9];
-exeight(array) */
+exEight(array) */
 
 //EXERCISE 9 biggest numbers
 
-/* function exnine() {
+/* function exNine() {
     for (let i = 0; i < array.length; i++) {
         if (array[i] > array[0])
         {
@@ -77,11 +77,11 @@ exeight(array) */
 }
     
 let array = [7, 2, 17, 1, 3, 0.8,9];
-exnine(array) */
+exNine(array) */
 
 //EXERCISE 10 Index value
 
-/* function exten(array, index) {
+/* function exTen(array, index) {
     for (let i = 0; i < array.length; i++){
         if (i === index) { console.log(array[i]); }
    } 
@@ -89,52 +89,44 @@ exnine(array) */
 
 //var array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
 var index = 4;
-exten(array,index) */
+exTen(array,index) */
 
-//EXERCISE 8
 
-/* function exeight() {
+// EXERCISE 11 Repeated values SMALL ISSUE W/JOINING
+
+function exEleven(array) {
     for (let i = 0; i < array.length; i++) {
-        if (array[i] < array[0])
-        {
-             array[0] = array[i];
-        }
-    } console.log (array[0]);       
-}
-    
-let array = [7, 2, 8, 1, 3, 0.8,9];
-exeight(array) */
+        for (let j = 0; j < array.length; j++) {
+            if (i !== j) {
+                if (array[i] === array[j]) {
 
-// EXERCISE 11 Repeated value - NOT DONE YET
-
-function exeleven(item, i) {
-    for (let i = 0; i < array.length; i++){ 
-        if (array.findIndex[item] !== i) {
-         console.log (exeleven); 
+                    console.log(array[i]); continue
+                }}
+            if (array[i]) {}     
         }
-    } 
-    
+    }
+ 
 }
 
-let array = [7, 5,  2,2, 8, 1, 3, 0.8,9];
-exeleven() 
+let array = [5,7,8,9,8, 9,];
+exEleven(array)  
  
 
 // EXERCISE 12 Converting Array into String
 
-/* function extw() {
-console.log (mycolor.join(', '))
+/* function exTw() {
+console.log (myColor.join(', '))
 
 }
 
-mycolor = ["Red", "Green", "White", "Black"];
-extw(); */
+myColor = ["Red", "Green", "White", "Black"];
+exTw(); */
 
 
 // JavaScript String
 // EXERCISE 13 Reverse number
 
-/* function exfif() {
+/* function exFif() {
 
      const string = num.split(" ");  
      for (let i = 0; i < string.length; i++) {
@@ -145,22 +137,22 @@ extw(); */
 }
     
 const num = "3456";
- exfif(num) 
+ exFif(num) 
  */
 
 // EXERCISE 14 alphabetical order
 
 /* let x = "webmaster"
-function exfour() {
+function exFour() {
     console.log(x.split('').sort().join(''));
     
 }
 
-exfour (x) */
+exFour (x) */
 
 // EXERCISE 15 Uppercase first letter of each word
 
-/* function exfif() {
+/* function exFif() {
   const words = sentence.split(" ");  
 for (let i = 0; i < words.length; i++) {
     words[i] = words[i][0].toUpperCase() + words[i].substr(1);
@@ -168,12 +160,12 @@ for (let i = 0; i < words.length; i++) {
     console.log(words.join(' '));
 }
 const sentence = "prince of persia";
- exfif(sentence) */
+ exFif(sentence) */
 
 
 // EXERCISE 16
 
-/* function exsix() {
+/* function exSix() {
     let str = string.split(" ");
     let longest = 0;
     let word = null;
@@ -187,7 +179,7 @@ const sentence = "prince of persia";
 
 };
 const string = "Web Development Tutorial";
-exsix(string);
+exSix(string);
  */
 
 
