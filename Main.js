@@ -99,7 +99,6 @@ function exEleven(array) {
         for (let j = 0; j < array.length; j++) {
             if (i !== j) {
                 if (array[i] === array[j]) {
-
                     console.log(array[i]); continue
                 }}
             if (array[i]) {}     
@@ -182,10 +181,60 @@ const string = "Web Development Tutorial";
 exSix(string);
  */
 
+//EPIC 2: DOM MANIPULATION
+// EXERCISE 17 
+
+/* function addBands(myBandList) {
+    
+    for (let i = 0; i < myBandList.length; i++) { 
+        const place = document.getElementById('band-list');
+    const bandList = document.createElement('li');
+        bandList.appendChild(document.createTextNode(myBandList[i]));
+        place.appendChild(bandList);
+    }
+}
+
+let myBandList = ["Bob Marley", "Mac Miller", "Phill Collins"]
+addBands(myBandList)
+ */
+
+//EXERCISE 18 
 
 
+function generateTable(column, row) {
+    const heading = document.getElementsByTagName('h1');
+    const table = document.createElement('table');
+    const tBody = document.createElement('tBody'); 
+    const addRow = table.insertRow();
+    const cell = addRow.insertCell();
+    
+    console.log(table);   
+   
+} 
+
+let multiplicationTable = (4,8)
+generateTable(multiplicationTable)
 
 
+/* multiplicationTable[0]
+multiplicationTable[1]
+
+  for (let i = 0; i < multiplicationTable.length; i++) {
+        if (multiplicationTable[0]) { console.log(returnone) }
+    else {console.log(returntwo)};
+}; 
+    
+    table.setAttribute("tr", row);
+    table.setAttribute("col", column)
+ */
 
 
+  /*       for (let i = 0; i < multiplicationTable.length; i++) {
+        (row = multiplicationTable[i] * table.insertRow());
+    }  
 
+    
+    for (let j = 0; j === multiplicationTable[1]; i++) {
+       (table.insertCell())*multiplicationTable[i]
+   break;}
+    console.log(table);  */
