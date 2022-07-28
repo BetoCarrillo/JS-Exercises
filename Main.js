@@ -99,15 +99,16 @@ function exEleven(array) {
         for (let j = 0; j < array.length; j++) {
             if (i !== j) {
                 if (array[i] === array[j]) {
-                    console.log(array[i]); continue
-                }}
-            if (array[i]) {}     
+                    console.log(array[i]); 
+                }
+            } 
+            
         }
     }
  
 }
 
-let array = [5,7,8,9,8, 9,];
+let array = [5,7,8,9,8,9];
 exEleven(array)  
  
 
@@ -136,8 +137,8 @@ exTw(); */
 }
     
 const num = "3456";
- exFif(num) 
- */
+ exFif(num)  */
+ 
 
 // EXERCISE 14 alphabetical order
 
@@ -154,17 +155,20 @@ exFour (x) */
 /* function exFif() {
   const words = sentence.split(" ");  
 for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+   
 }
-    console.log(words.join(' '));
+    const newArray = words.join(' ');
+    return newArray
+    console.log(newArray);
 }
 const sentence = "prince of persia";
- exFif(sentence) */
+console.log(exFif(sentence)); */
 
 
 // EXERCISE 16
 
-/* function exSix() {
+function exSix() {
     let str = string.split(" ");
     let longest = 0;
     let word = null;
@@ -179,7 +183,7 @@ const sentence = "prince of persia";
 };
 const string = "Web Development Tutorial";
 exSix(string);
- */
+
 
 //EPIC 2: DOM MANIPULATION
 // EXERCISE 17 
@@ -200,21 +204,41 @@ addBands(myBandList)
 
 //EXERCISE 18 
 
-
-function generateTable(column, row) {
-    const heading = document.getElementsByTagName('h1');
+function generateTable(row, col) {
+    const place = document.body;
     const table = document.createElement('table');
-    const tBody = document.createElement('tBody'); 
-    const addRow = table.insertRow();
-    const cell = addRow.insertCell();
-    
-    console.log(table);   
+    place.appendChild(table);
+
+
+  /*     for (let j = 0; j < col; j++) {
+            let cells = table.insertCell()
+            cells.style.border = "solid black 2px";
+            cells.style.padding = "10px";
+            createRow.appendChild(cells);
+            table.appendChild(createRows);
+           cells.innerHTML = "Col"; 
+        } */
+  
    
+        for (let j = 0; j < row; j++) {
+            let createRow = table.insertRow();
+            createRow.innerHTML = "Row";
+            for (let i = 0; i < col; i++) {
+            const cells = 
+            createRow.insertCell();
+        }    
+            
+    }
+
+    table.setAttribute("border", "1");
+    console.log(table);  
+    
 } 
 
 let multiplicationTable = (4,8)
 generateTable(multiplicationTable)
 
+    //const cell = addRow.insertCell();
 
 /* multiplicationTable[0]
 multiplicationTable[1]
@@ -238,3 +262,22 @@ multiplicationTable[1]
        (table.insertCell())*multiplicationTable[i]
    break;}
     console.log(table);  */
+
+
+
+
+/*     function generateTable(column, row) {
+    const place = document.getElementsByTagName('section');
+    const table = document.createElement('table');
+    const tBody = document.createElement('tbody'); 
+    for (let i = 0; i < multiplicationTable[0]; i++){
+        const addRow = table.insertRow(); 
+    }
+    
+    addRow.innerHTML = "<b>Row</b>";
+    addRow.setAttribute = 
+    console.log(table);    
+} 
+
+let multiplicationTable = (4,8)
+generateTable(multiplicationTable) */
