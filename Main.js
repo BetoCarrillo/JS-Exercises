@@ -3,57 +3,57 @@ console.log("Starting javascript...")
 //EXERCISE 1 Writing expressions with variables
 
 let myDog = "Nano";
-//console.log(myDog);
+console.log(myDog);
 
 //EXERCISE 2 Writing expressions with variables
 let nanoAge = 17;
-//console.log(nanoAge);
+console.log(nanoAge);
 
 //EXERCISE 3 Writing expressions with variables
 
 let daniAge = 30;
 let ageDiff = (nanoAge - daniAge);
-//console.log(ageDiff);
+console.log(ageDiff);
 
 // EXERCISE 4 AGE COMPARISON 
 if(nanoAge>=21) {
-    //console.log("Nano is older than 21");
+console.log("Nano is older than 21");
 }
-//else { console.log("Nano is younger than 21") }
+else { console.log("Nano is younger than 21") }
 
 //EXERCISE 5 AGE COMPARISON
 
-//if (nanoAge < daniAge) { console.log("Nano is younger"); }
+if (nanoAge < daniAge) { console.log("Nano is younger"); }
 
-//else if (nanoAge > daniAge) { console.log("Nano is older"); }
+else if (nanoAge > daniAge) { console.log("Nano is older"); }
 
-//else {console.log("Same age"); }
+else {console.log("Same age"); }
 
 //EXERCISE 6 Sorting an Array
 
 let classNames = ["Alberto", "Emily", "Jan", "Phillip", "Raul"];
-//console.log(classNames[0])
-//console.log(classNames[4])
-//for (let i = 0; i<classNames.length; i++) { console.log(classNames[i]) };
+console.log(classNames[0])
+console.log(classNames[4])
+for (let i = 0; i<classNames.length; i++) { console.log(classNames[i]) };
 
 //EXERCISE 7 Looping over an Array
 
 const ageClass = [31, 28, 30, 35];
-//let i = 0;
-//while (i < ageClass.length) { console.log(ageClass[i]); i++; }
+let i = 0;
+while (i < ageClass.length) { console.log(ageClass[i]); i++; }
 
-//while (i < ageClass.length) {
-    //if (ageClass[i] % 2 == 0) console.log(ageClass[i]); i++;}
+while (i < ageClass.length) {
+    if (ageClass[i] % 2 == 0) console.log(ageClass[i]); i++;}
 
-//for (let i = 0; i < ageClass.length; i++) { console.log(ageClass[i])};
+for (let i = 0; i < ageClass.length; i++) { console.log(ageClass[i])};
 
-//for (let i = 0; i < ageClass.length; i++)
-    //if (ageClass[i] % 2 == 0) {console.log(ageClass[i])};
+for (let i = 0; i < ageClass.length; i++)
+    if (ageClass[i] % 2 == 0) {console.log(ageClass[i])};
 
 // Functions that use Arrays:
 //EXERCISE 8 Lowest number
 
-/* function exEight() {
+function exEight() {
     for (let i = 0; i < array.length; i++) {
         if (array[i] < array[0])
         {
@@ -63,25 +63,25 @@ const ageClass = [31, 28, 30, 35];
 }
     
 let array = [7, 2, 8, 1, 3, 0.8,9];
-exEight(array) */
+exEight(array) 
 
 //EXERCISE 9 biggest numbers
 
-/* function exNine() {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > array[0])
+function exNine() {
+    for (let i = 0; i < biggestArray.length; i++) {
+        if (biggestArray[i] > biggestArray[0])
         {
-             array[0] = array[i];
+             biggestArray[0] = biggestArray[i];
         }
-    } console.log (array[0]);       
+    } console.log (biggestArray[0]);       
 }
     
-let array = [7, 2, 17, 1, 3, 0.8,9];
-exNine(array) */
+let biggestArray = [7, 2, 17, 1, 3, 0.8,9];
+exNine(biggestArray) 
 
 //EXERCISE 10 Index value
 
-/* function exTen(array, index) {
+function exTen(array, index) {
     for (let i = 0; i < array.length; i++){
         if (i === index) { console.log(array[i]); }
    } 
@@ -89,28 +89,30 @@ exNine(array) */
 
 //var array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
 var index = 4;
-exTen(array,index) */
+exTen(array,index) 
 
 
 // EXERCISE 11 Repeated values SMALL ISSUE W/JOINING
 
-function exEleven(array) {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array.length; j++) {
-            if (i !== j) {
-                if (array[i] === array[j]) {
-                    console.log(array[i]); 
+
+
+function exEleven(repeatedArray) {
+    let repeated = [];
+    for (let i = 0; i < repeatedArray.length; i++) {
+        for (let j = i+1; j < repeatedArray.length; j++) {
+            if (repeatedArray[i] === repeatedArray[j]) {
+                if (!repeated.includes(repeatedArray[i])) {
+                        repeated.push(repeatedArray[i]);
+                    }     
                 }
-            } 
-            
         }
     }
- 
+    return repeated;
 }
 
-let array = [5,7,8,9,8,9];
-exEleven(array)  
- 
+let repeatedArray = [5,8,7,8,9,6, 8,9,7];
+console.log(exEleven(array));
+
 
 // EXERCISE 12 Converting Array into String
 
@@ -168,7 +170,7 @@ console.log(exFif(sentence)); */
 
 // EXERCISE 16
 
-function exSix() {
+/* function exSix() {
     let str = string.split(" ");
     let longest = 0;
     let word = null;
@@ -182,7 +184,7 @@ function exSix() {
 
 };
 const string = "Web Development Tutorial";
-exSix(string);
+exSix(string); */
 
 
 //EPIC 2: DOM MANIPULATION
@@ -208,35 +210,23 @@ function generateTable(row, col) {
     const place = document.body;
     const table = document.createElement('table');
     place.appendChild(table);
-
-
-  /*     for (let j = 0; j < col; j++) {
-            let cells = table.insertCell()
-            cells.style.border = "solid black 2px";
-            cells.style.padding = "10px";
-            createRow.appendChild(cells);
-            table.appendChild(createRows);
-           cells.innerHTML = "Col"; 
-        } */
-  
-   
-        for (let j = 0; j < row; j++) {
+    table.setAttribute("border", "2") ;
+    table.setAttribute("color", "blue");   
+   for (let j = 0; j < row; j++) {
             let createRow = table.insertRow();
-            createRow.innerHTML = "Row";
-            for (let i = 0; i < col; i++) {
-            const cells = 
-            createRow.insertCell();
-        }    
+       createRow.innerHTML = "Row";
+        for (let i = 0; i < col; i++) {
+                const cells = createRow.insertCell();
+            cells.innerHTML = "cell";
+            console.log(cells)
             
+        }    
     }
-
-    table.setAttribute("border", "1");
     console.log(table);  
-    
 } 
 
-let multiplicationTable = (4,8)
-generateTable(multiplicationTable)
+let multiplicationTable = [4,3]
+generateTable(multiplicationTable[0],multiplicationTable[1] )
 
     //const cell = addRow.insertCell();
 
